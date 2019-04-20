@@ -17,30 +17,27 @@ if (facing == dir.left) {
 }
 
 // Set grounded variable for convenience
-var instanceBelowGrounded = (instanceBelow != noone && !(ignoreOneWay && instanceBelow.oneWay));
-var slopeBelowGrounded = (slopeBelow != noone && !(ignoreOneWay && slopeBelow.oneWay));
+var instanceBelowGrounded = (instanceBelow != noone);
+var slopeBelowGrounded = (slopeBelow != noone);
 grounded = instanceBelowGrounded || slopeBelowGrounded;
 
-onSlope = false;
 if (solidized) {
 	// Don't fall through the floor
 	if (instanceBelow != noone) {
-		if (!(ignoreOneWay && instanceBelow.oneWay)) {
-			if (yspeed > 0) {
-				yspeed = yspeed < 1.0 ? 0 : (-yspeed) * vBounciness;
-			}
-			y = instanceBelow.bbox_top - (bbox_bottom - y) - 1;
+		if (yspeed > 0) {
+			yspeed = yspeed < 1.0 ? 0 : (-yspeed) * vBounciness;
 		}
+		y = instanceBelow.bbox_top - (bbox_bottom - y) - 1;
 	}
 	
 	// Don't go through a ceiling
-	if (instanceAbove != noone && yspeed < 0 && instanceAbove.oneWay == false) {
+	if (yspeed < 0) {
 		yspeed = yspeed > -1.0 ? 0 : (-yspeed) * vBounciness;
 		y = instanceAbove.bbox_bottom + 1;
 	}
 	
 	// Don't go through a wall left
-	if (instanceLeft != noone && instanceLeft.oneWay == false && bbox_left > instanceLeft.bbox_right) {
+	if (instanceLeft != noone && bbox_left > instanceLeft.bbox_right) {
 		if (xspeed < 0) {
 			xspeed = (-xspeed) * hBounciness;
 			if (hBounciness > 0) {
@@ -51,7 +48,7 @@ if (solidized) {
 	}
 	
 	// Don't go through a wall right
-	if (instanceRight != noone && instanceRight.oneWay == false && bbox_right < instanceRight.bbox_left) {
+	if (instanceRight != noone && bbox_right < instanceRight.bbox_left) {
 		if (xspeed > 0) {
 			xspeed = (-xspeed) * hBounciness;
 			if (hBounciness > 0) {
