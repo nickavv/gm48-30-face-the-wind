@@ -2,6 +2,10 @@ event_inherited();
 
 xspeed = lerp(xspeed, targetXSpeed, frictionFactor);
 
+if (!grounded) {
+	state = playerState.falling;
+}
+
 switch (state) {
 case playerState.idle: {
 	sprite_index = facing == dir.left ? spr_player_stand_left : spr_player_stand_right;
@@ -25,5 +29,12 @@ case playerState.running: {
 		}
 	}
 	anim_speed = (abs(xspeed)/moveSpeed);
+	event_user(15);
 } break;
+case playerState.falling: {
+	sprite_index = facing == dir.left ? spr_player_stand_left : spr_player_stand_right;
+	if (grounded) {
+		state = playerState.idle;
+	}
+}
 }

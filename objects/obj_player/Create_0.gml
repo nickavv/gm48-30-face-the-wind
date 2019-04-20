@@ -2,7 +2,8 @@ event_inherited();
 
 enum playerState {
 	idle,
-	running
+	running,
+	falling
 }
 
 facing = dir.right;

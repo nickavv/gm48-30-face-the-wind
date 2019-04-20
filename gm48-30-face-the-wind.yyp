@@ -34,7 +34,7 @@
             "Key": "0beebca0-6640-4176-b9a6-a17ac2b1a61e",
             "Value": {
                 "id": "6549893a-5242-4b40-9fcb-394b80c07bec",
-                "resourcePath": "objects\\obj_collider_parent_solid\\obj_collider_parent_solid.yy",
+                "resourcePath": "objects\\obj_collider_solid\\obj_collider_solid.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -58,7 +58,7 @@
             "Key": "2733486b-7f38-49a1-8f9b-614e9eae4767",
             "Value": {
                 "id": "ba9a66ad-2925-4ad7-b26f-82bb8df8bd9a",
-                "resourcePath": "objects\\obj_collider_parent_slope_left\\obj_collider_parent_slope_left.yy",
+                "resourcePath": "objects\\obj_collider_slope_left\\obj_collider_slope_left.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -314,7 +314,7 @@
             "Key": "ebeb9ae5-0a87-4c83-8bc3-34bcadd56fcd",
             "Value": {
                 "id": "0989acd0-d750-4bef-8343-1a0a42bb7675",
-                "resourcePath": "objects\\obj_collider_parent_slope_right\\obj_collider_parent_slope_right.yy",
+                "resourcePath": "objects\\obj_collider_slope_right\\obj_collider_slope_right.yy",
                 "resourceType": "GMObject"
             }
         },

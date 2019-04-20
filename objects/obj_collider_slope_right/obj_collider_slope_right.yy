@@ -1,8 +1,8 @@
 {
-    "id": "2733486b-7f38-49a1-8f9b-614e9eae4767",
+    "id": "ebeb9ae5-0a87-4c83-8bc3-34bcadd56fcd",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_collider_parent_slope_left",
+    "name": "obj_collider_slope_right",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": true,
-    "spriteId": "f6e1a9da-8764-46e6-aec0-cb9523797a8a",
+    "spriteId": "4a17639b-3caf-40d3-a2bf-69c9b6af520e",
     "visible": true
 }

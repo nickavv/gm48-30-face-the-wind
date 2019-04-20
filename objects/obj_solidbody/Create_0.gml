@@ -2,8 +2,6 @@ event_inherited();
 
 gravitized = true;
 grounded = false;
-onSlope = false;
-ignoreOneWay = false;
 facing = dir.left;
 
 instanceBelow = noone;
