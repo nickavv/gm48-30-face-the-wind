@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "8b72458e-8b8e-4060-b7ee-2615725947dd",
+            "Value": {
+                "id": "a494fc0f-64a7-4492-b734-82ad5f52e9c4",
+                "resourcePath": "sprites\\spr_stranger\\spr_stranger.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8cf0bbca-a167-47fe-af92-96bbb8ad6e98",
             "Value": {
                 "id": "265d0015-705d-4c12-a901-e5cb70da695e",
@@ -375,6 +383,14 @@
             }
         },
         {
+            "Key": "bc9be8ed-0034-4f28-be2b-7b91859aea52",
+            "Value": {
+                "id": "21ffcccf-41f1-4e53-93d7-4935ca2f8646",
+                "resourcePath": "objects\\obj_stranger\\obj_stranger.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bcfbb519-b2c4-4c99-8699-e0a93ec2b5dd",
             "Value": {
                 "id": "1b6c78af-263e-4aa7-b75b-c386a0225509",
@@ -412,6 +428,14 @@
                 "id": "1cea3110-ea23-417b-999e-f3fecd3668ff",
                 "resourcePath": "views\\d46af342-50f2-44a8-8476-b921aa448f95.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "dc1caef3-fc2b-4c10-9014-9c0d30b8af06",
+            "Value": {
+                "id": "d1bb6226-2ff6-466f-88d1-fe1e4f47582a",
+                "resourcePath": "sprites\\spr_text_box\\spr_text_box.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -468,6 +492,14 @@
                 "id": "c9647aeb-02fd-4eb3-9bad-23fb0db49b62",
                 "resourcePath": "sprites\\spr_collider_solid_slope_left\\spr_collider_solid_slope_left.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f97e46d9-d7cf-4a54-a95b-aff9cccbcc7c",
+            "Value": {
+                "id": "e8dca106-4436-46ae-999f-d08792bbd0a4",
+                "resourcePath": "fonts\\font_spaceloot\\font_spaceloot.yy",
+                "resourceType": "GMFont"
             }
         },
         {
