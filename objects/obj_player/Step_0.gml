@@ -54,6 +54,10 @@ case playerState.falling: {
 case playerState.dead: {
 	if (sprite_index != spr_player_fall_left && sprite_index != spr_player_fall_right) {
 		sprite_index = facing == dir.left ? spr_player_fall_left : spr_player_fall_right;
+		instance_activate_object(obj_cyberghost);
+		obj_cyberghost.x = x;
+		obj_cyberghost.y = y;
+		obj_camera.followTarget = obj_cyberghost;
 	}
 	targetXSpeed = 0;
 } break;

@@ -6,3 +6,6 @@ layer_y("BG_Sky", (_cam_y));
 
 layer_x("BG_Buildings", (_cam_x * 0.9));
 layer_y("BG_Buildings", (_cam_y * 0.9) - 100);
+
+layer_x("BG_Buildings2", (_cam_x * 0.7) + 150);
+layer_y("BG_Buildings2", (_cam_y * 0.7) - 50);

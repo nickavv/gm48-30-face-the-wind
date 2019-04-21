@@ -31,7 +31,7 @@ if (solidized) {
 	}
 	
 	// Don't go through a ceiling
-	if (vspeed < 0) {
+	if (instanceAbove != noone && vspeed < 0) {
 		vspeed = vspeed > -1.0 ? 0 : (-vspeed) * vBounciness;
 		y = instanceAbove.bbox_bottom + 1;
 	}
