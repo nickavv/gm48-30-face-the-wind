@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "3bd7b94e-5d70-452e-afaa-18273a243f05",
+            "Value": {
+                "id": "fc6b1a39-2d2d-48da-b656-4331d80f3b74",
+                "resourcePath": "objects\\obj_text_draw\\obj_text_draw.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4ddc0605-300d-4ecb-9d83-437b3c1ce1b5",
             "Value": {
                 "id": "f176f4ba-5091-4962-bf3f-dea8f0d84ac6",
@@ -498,7 +506,7 @@
             "Key": "f97e46d9-d7cf-4a54-a95b-aff9cccbcc7c",
             "Value": {
                 "id": "e8dca106-4436-46ae-999f-d08792bbd0a4",
-                "resourcePath": "fonts\\font_spaceloot\\font_spaceloot.yy",
+                "resourcePath": "fonts\\font_skullboy\\font_skullboy.yy",
                 "resourceType": "GMFont"
             }
         },
