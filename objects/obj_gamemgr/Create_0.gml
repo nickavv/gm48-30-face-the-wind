@@ -10,3 +10,4 @@ guiHeight = 288;
 display_set_gui_size(guiWidth, guiHeight);
 
 firstRespawn = false;
+ownRespawnBracelet = false;

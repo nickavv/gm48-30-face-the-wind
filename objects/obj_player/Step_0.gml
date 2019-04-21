@@ -35,6 +35,7 @@ case playerState.running: {
 case playerState.falling: {
 	anim_speed = 1;
 	airFrame += 1;
+	obj_gamemgr.game_speed = clamp(1/(airFrame/15), 0.2, 1.0);
 	if (keyboard_check(vk_left)) {
 		facing = dir.left;
 		targetXSpeed = -airMoveSpeed;
@@ -48,17 +49,26 @@ case playerState.falling: {
 	sprite_index = facing == dir.left ? spr_player_stand_left : spr_player_stand_right;
 	if (grounded) {
 		airFrame = 0;
+		obj_gamemgr.game_speed = 1;
 		state = playerState.idle;
 	}
 } break;
 case playerState.dead: {
 	airFrame = 0;
+	obj_gamemgr.game_speed = 1;
 	if (sprite_index != spr_player_fall_left && sprite_index != spr_player_fall_right) {
 		sprite_index = facing == dir.left ? spr_player_fall_left : spr_player_fall_right;
-		instance_activate_object(obj_cyberghost);
-		obj_cyberghost.x = x;
-		obj_cyberghost.y = y;
+		instance_create_depth(x, y, depth, obj_cyberghost);
 		obj_camera.followTarget = obj_cyberghost;
+		with (obj_music_city) {
+			event_user(1);
+		}
+	}
+	if (obj_gamemgr.ownRespawnBracelet && keyboard_check_pressed(ord("T"))) {
+		obj_gamemgr.credits -= 20;
+		obj_player.state = playerState.idle;
+		obj_player.x = obj_cyberghost.x;
+		obj_player.y = obj_cyberghost.y;
 	}
 	targetXSpeed = 0;
 } break;

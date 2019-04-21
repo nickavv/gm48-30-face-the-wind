@@ -2,7 +2,10 @@ event_inherited();
 
 if (obj_player.state != playerState.dead) {
 	obj_camera.followTarget = obj_player;
-	instance_deactivate_object(obj_cyberghost);
+	with (obj_music_city) {
+		event_user(0);
+	}
+	instance_destroy();
 }
 
 xspeed = lerp(xspeed, targetXSpeed, frictionFactor);

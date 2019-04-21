@@ -4,7 +4,7 @@ if (distance_to_object(obj_player) < 40) {
 	draw_sprite(spr_text_box, 0, x - 150, y - 90);
 	if (text == noone) {
 		text = instance_create_depth(x - 140, y - 82, obj_player.depth - 1, obj_text_draw);
-		text.message = "Be more careful next time, I won't help you again. Visit that store";
+		text.message = "Be more careful next time, I won't help you again. You should visit that store";
 	}
 } else if (distance_to_object(obj_cyberghost) < 40) {
 	draw_sprite(spr_text_box, 0, x - 150, y - 90);
@@ -19,9 +19,9 @@ if (distance_to_object(obj_player) < 40) {
 			if (keyboard_check_pressed(ord("Q"))) {
 				obj_gamemgr.firstRespawn = true;
 				obj_gamemgr.credits -= 12;
+				obj_player.state = playerState.idle;
 				obj_player.x = x - 16;
 				obj_player.y = y;
-				obj_player.state = playerState.idle;
 				instance_destroy(obj_text_draw);
 				text = noone;
 			}
