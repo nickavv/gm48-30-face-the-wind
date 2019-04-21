@@ -23,7 +23,7 @@ grounded = instanceBelowGrounded || slopeBelowGrounded;
 
 if (solidized) {
 	// Don't fall through the floor
-	if (instanceBelow != noone) {
+	if (instanceBelow != noone && instanceBelow.mSolid) {
 		if (vspeed > 0) {
 			vspeed = vspeed < 1.0 ? 0 : (-vspeed) * vBounciness;
 		}
@@ -31,13 +31,13 @@ if (solidized) {
 	}
 	
 	// Don't go through a ceiling
-	if (instanceAbove != noone && vspeed < 0) {
+	if (instanceAbove != noone && vspeed < 0 && instanceAbove.mSolid) {
 		vspeed = vspeed > -1.0 ? 0 : (-vspeed) * vBounciness;
 		y = instanceAbove.bbox_bottom + 1;
 	}
 	
 	// Don't go through a wall left
-	if (instanceLeft != noone && bbox_left > instanceLeft.bbox_right) {
+	if (instanceLeft != noone && bbox_left > instanceLeft.bbox_right && instanceLeft.mSolid) {
 		if (hspeed < 0) {
 			hspeed = (-hspeed) * hBounciness;
 			if (hBounciness > 0) {
@@ -48,7 +48,7 @@ if (solidized) {
 	}
 	
 	// Don't go through a wall right
-	if (instanceRight != noone && bbox_right < instanceRight.bbox_left) {
+	if (instanceRight != noone && bbox_right < instanceRight.bbox_left && instanceRight.mSolid) {
 		if (hspeed > 0) {
 			hspeed = (-hspeed) * hBounciness;
 			if (hBounciness > 0) {

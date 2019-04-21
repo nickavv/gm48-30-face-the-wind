@@ -33,8 +33,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
-            "varName": "oneWay",
+            "value": "True",
+            "varName": "mSolid",
             "varType": 3
         }
     ],
