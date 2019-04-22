@@ -15,13 +15,3 @@ I made the entire thing myself, with about 8 hours of total time spent according
 - Aseprite (this tool rules)
 - PreSonus Studio One for the music/sounds
 
-## Screenshots Plz
-OK you've been patient, here they are. Check it out and go play the game! Please give me your feedback
-
-![Title Screen](https://imgur.com/QojBaKl.png)
-
-![Screenshot 1](https://imgur.com/quBf17n.png)
-
-![Screenshot 2](https://imgur.com/snMpORu.png)
-
-![Screenshot 3](https://imgur.com/D0qaMit.png)
